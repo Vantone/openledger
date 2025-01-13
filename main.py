@@ -442,7 +442,8 @@ async def process_requests(use_proxy, wallets, proxies):
 # 主函数
 async def main():
     display_header()
-    use_proxy = input('您想使用代理吗？(y/n): ').lower() == 'y'
+    # use_proxy = input('您想使用代理吗？(y/n): ').lower() == 'y'
+    use_proxy = True
     wallets = read_wallets()
     proxies = read_proxies()
     
