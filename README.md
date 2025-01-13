@@ -42,4 +42,10 @@ Openledger Bot 是一个简单的工具，旨在自动化节点交互。
    python main.py或者python3 main.py
    ```
 
+##  docker 启动方式
+```
+docker pull python:3.11-alpine3.21
+docker run -itd  --restart always  --name openledger  -v /root/openledger:/root/openledger  -w /root/openledger   python:3.11-alpine3.21  sh -c 'pip install -r requirements.txt && python main.py '
+```
+
 ## PS:不要删除 `data.json`！
